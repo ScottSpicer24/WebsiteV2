@@ -1,0 +1,42 @@
+[
+    {
+        "Entity" : "University of Central Florida",
+        "City" : "Orlando",
+        "State" : "FL",
+        "Title" : "B.S. Industrial Engineering",
+        "Month" : "Dec.",
+        "Year" : "2021",
+        "Subtext" : "GPA: 3.8",
+        "LogoPath" : "../../../../assets/logos/UCF_logo.png"
+    },
+    {
+        "Entity" : "University of Central Florida",
+        "City" : "Orlando",
+        "State" : "FL",
+        "Title" : "B.S. Computer Science",
+        "Month" : "Dec.",
+        "Year" : "2024",
+        "Subtext" : "GPA: 3.7",
+        "LogoPath" : "../../../../assets/logos/UCF_logo.png"
+    },
+    {
+        "Entity" : "Amazon Web Service",
+        "City" : "Online",
+        "State" : null,
+        "Title" : "Developer Associate (DVA-C02)",
+        "Month" : "Sept.",
+        "Year" : "2024",
+        "Subtext" :  "Cloud Certification",
+        "LogoPath" : "../../../../assets/logos/AWS-Certified-Developer-Associate_badge.png"
+    },
+    {
+        "Entity" : "University of Central Florida",
+        "City" : "Orlando",
+        "State" : "Fl",
+        "Title" : "M.S. Computer Science",
+        "Month" : "Dec.",
+        "Year" : "2025",
+        "Subtext" : "GPA: 3.9",
+        "LogoPath" : "../../../../assets/logos/UCF_logo.png"
+    }
+]

@@ -1,0 +1,32 @@
+<div class="tl-card">
+    <div class="top">
+        <div class="top-left">
+            <img src='{{item.LogoPath}}' alt="UCF">
+        </div>
+        <div class="top-mid">
+            <div class="top-mid-name">{{ item.Entity }}</div>
+            @if (item.State == null || item.City == null) {
+                @if(item.State == null){
+                    <div class="top-mid-location">{{ item.City }}</div>
+                }
+                @else{
+                    <div class="top-mid-location">{{ item.State }}</div>
+                }
+            }
+            @else {
+                <div class="top-mid-location">{{ item.City }}, {{ item.State }}</div>
+            } 
+        </div>
+        
+        <div class="top-right">{{ item.Month }} {{ item.Year }}</div>
+    </div>
+    <div class="bot">
+        <div class="bot-main">
+            {{ item.Title }}
+        </div>
+        <div class="bot-sub">
+            {{ item.Subtext }}
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,55 @@
+.tl-card {
+    width: 30rem;
+    height: 12rem;
+    border: 5px solid black;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.top-left {
+  overflow: hidden;         /* crop an oversize image */
+}
+
+.top-left img {             /* if you have an <img> here */
+  width: 100%;
+  height: 100%;
+  object-fit:contain;        /* fill the cell without distortion */
+}
+.top-mid{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    font-size: 1.25rem;
+}
+.top-mid-entity{
+
+}
+.top-mid-location{
+    
+}
+.top-right{
+    display: flex;
+    flex-direction: column;
+    //margin: auto 0;
+    text-align: right;
+}
+
+
+.bot{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+.bot-main{
+    font-size: 2rem;
+}
+.bot-sub{
+    font-size: 1rem;
+}

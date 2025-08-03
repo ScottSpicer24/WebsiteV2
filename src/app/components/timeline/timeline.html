@@ -1,0 +1,7 @@
+
+<div class="tl-container">
+    @for(item of jsonData; track $index; let i = $index){
+        <app-timeline-card [item]="jsonData[i]"></app-timeline-card>
+    }
+</div>
+
