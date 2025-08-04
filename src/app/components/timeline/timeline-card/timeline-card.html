@@ -1,32 +1,52 @@
-<div class="tl-card">
-    <div class="top">
-        <div class="top-left">
-            <img src='{{item.LogoPath}}' alt="UCF">
-        </div>
-        <div class="top-mid">
-            <div class="top-mid-name">{{ item.Entity }}</div>
-            @if (item.State == null || item.City == null) {
-                @if(item.State == null){
-                    <div class="top-mid-location">{{ item.City }}</div>
+@if(!flipped){
+    <div class="tl-card front">
+        <div class="top">
+            <div class="top-left">
+                <img src='{{item.LogoPath}}' alt="UCF">
+            </div>
+            <div class="top-mid">
+                <div class="top-mid-entity">{{ item.Entity }}</div>
+                @if (item.State == null || item.City == null) {
+                    @if(item.State == null){
+                        <div class="top-mid-location">{{ item.City }}</div>
+                    }
+                    @else{
+                        <div class="top-mid-location">{{ item.State }}</div>
+                    }
                 }
-                @else{
-                    <div class="top-mid-location">{{ item.State }}</div>
-                }
+                @else {
+                    <div class="top-mid-location">{{ item.City }}, {{ item.State }}</div>
+                } 
+            </div>
+            @if(item.StartYear == null){
+                <div class="top-right">{{ item.EndMonth }} {{ item.EndYear }}</div>
             }
             @else {
-                <div class="top-mid-location">{{ item.City }}, {{ item.State }}</div>
-            } 
+                <div class="top-right">
+                    <div>{{ item.StartMonth }} {{ item.StartYear }}</div> 
+                    <div>to</div>
+                    <div>{{ item.EndMonth }} {{ item.EndYear }}</div>
+                </div>
+            }
+            
         </div>
-        
-        <div class="top-right">{{ item.Month }} {{ item.Year }}</div>
+        <div class="bot">
+            <div class="bot-main">
+                {{ item.Title }}
+            </div>
+            <div class="bot-sub">
+                <div>{{ item.Subtext }}</div>
+                @if(item.Description){
+                    <button mat-flat-button (click)="flipped = !flipped">More</button>
+                }
+            </div> 
+        </div>
     </div>
-    <div class="bot">
-        <div class="bot-main">
-            {{ item.Title }}
-        </div>
-        <div class="bot-sub">
-            {{ item.Subtext }}
-        </div>
-        
+}
+
+@else {
+    <div class="tl-card back">
+        <div>{{item.Description}}</div>
+        <button mat-flat-button (click)="flipped = !flipped">Return</button>
     </div>
-</div>
+}

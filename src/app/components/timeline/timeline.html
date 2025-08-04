@@ -1,7 +1,16 @@
-
 <div class="tl-container">
-    @for(item of jsonData; track $index; let i = $index){
-        <app-timeline-card [item]="jsonData[i]"></app-timeline-card>
+    <div class="center-line"></div>
+    @for(item of data; track $index; let i = $index){
+        @if (i % 2 == 0) {
+            <div class="card-container even-card">
+                <app-timeline-card [item]="data[i]"></app-timeline-card>
+            </div>
+        }
+        @else {
+            <div class="card-container odd-card">
+                <app-timeline-card [item]="data[i]"></app-timeline-card>
+            </div>
+        }
     }
 </div>
 

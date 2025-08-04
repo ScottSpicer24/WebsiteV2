@@ -1,12 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { Degree } from '../../../../assets/data/datatypes';
+import { TlEntry } from '../../../../assets/data/datatypes';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-timeline-card',
-  imports: [],
+  imports: [MatButtonModule],
   templateUrl: './timeline-card.html',
   styleUrl: './timeline-card.scss'
 })
 export class TimelineCard {
-  @Input() item!: Degree;
+  @Input() item!: TlEntry;
+
+  flipped: boolean = false;
 }

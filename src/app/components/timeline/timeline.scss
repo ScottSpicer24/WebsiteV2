@@ -1,5 +1,30 @@
+:host{
+  display:block;
+  position:relative;
+  z-index:2;         /* one layer higher than the landing screen     */
+}
 .tl-container{
-    height: 300px;
-    width: 100%;
-    background-color: aqua;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 5px;
+    background-image: linear-gradient(#FFF, #FFF);
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 4rem;
+}
+
+.card-container {
+    display: flex;
+    z-index: 5;
+    margin: -4rem auto 1rem;
+}
+
+.even-card {
+    transform: translateX(calc((50% + 2rem) * -1));
+}
+.odd-card {
+    transform: translateX(calc(50% + 2rem));
 }
