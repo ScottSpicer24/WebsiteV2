@@ -1,0 +1,54 @@
+<div class="skills-cont">
+    <div class="domain-cont">
+        @for(skill of fe; track $index){
+            @if($index % 2 == 0){
+                <div class="entry">
+                    <img src="{{skill.LogoPath}}">
+                    <p>{{ skill.Name }}</p>
+                </div>
+            }
+            @else {
+                <div class="entry">
+                    <p>{{ skill.Name }}</p>
+                    <img src="{{skill.LogoPath}}">
+                </div>
+            }
+        }
+    </div>
+    <div class="domain-cont bd-left">
+        @for(skill of se; track $index){
+            @if($index % 2 == 0){
+                <div class="entry">
+                    <img src="{{skill.LogoPath}}">
+                    <p>{{ skill.Name }}</p>
+                </div>
+            }
+            @else {
+                <div class="entry">
+                    <p>{{ skill.Name }}</p>
+                    <img src="{{skill.LogoPath}}">
+                </div>
+            }
+        }
+    </div>
+    <div class="domain-cont bd-left">
+        @for(skill of ml; track $index){
+            @if($index % 2 == 0){
+                <div class="entry">
+                    <img src="{{skill.LogoPath}}">
+                    <p>{{ skill.Name }}</p>
+                </div>
+            }
+            @else {
+                <div class="entry">
+                    <p>{{ skill.Name }}</p>
+                    <img src="{{skill.LogoPath}}">
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<div class="others">
+    <p><u>Other Skills:</u> {{others}}</p>
+</div>

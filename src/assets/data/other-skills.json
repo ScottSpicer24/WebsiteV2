@@ -1,0 +1,9 @@
+{
+    "Name": "OtherSkills",
+    "OtherSkills":[
+        "C",
+        "Flask", "Bootstrap",
+        "Azure DevOps", "GitHub", "GitHub Actions", "Node.JS", "Slurm", "NoSQL", "Expo", "Jira", "Batch", "Bash",
+        "Scikit-Learn", "Pandas", "Tensorflow", "Windows Forms"
+    ]
+}

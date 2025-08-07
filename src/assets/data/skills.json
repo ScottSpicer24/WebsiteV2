@@ -1,0 +1,92 @@
+[
+    {
+        "Name": "Python",
+        "Class": "Languages",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/python-240.png"
+    },
+    {
+        "Name": "Java",
+        "Class": "Languages",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/java-240.png"
+    },
+    {
+        "Name": "TypeScript",
+        "Class": "Languages",
+        "Domain": "FE",
+        "LogoPath": "../../../../assets/icons/typescript-240.png"
+    },
+    {
+        "Name": "C#",
+        "Class": "Languages",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/c-sharp-logo-2-240.png"
+    },
+    {
+        "Name": "HTML/CSS",
+        "Class": "Languages",
+        "Domain": "FE",
+        "LogoPath": "../../../../assets/icons/html5-240.png"
+    },
+    {
+        "Name": "SQL",
+        "Class": "Languages",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/sql-96.png"
+    },
+    {
+        "Name": "Amazon Web Service",
+        "Class": "Tools",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/aws-256.png"
+    },
+    {
+        "Name": "Git",
+        "Class": "Tools",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/git-240.png"
+    },
+    {
+        "Name": "Angular",
+        "Class": "Tools",
+        "Domain": "FE",
+        "LogoPath": "../../../../assets/icons/angular-240.png"
+    },
+    {
+        "Name": "React Native",
+        "Class": "Tools",
+        "Domain": "FE",
+        "LogoPath": "../../../../assets/icons/react-160.png"
+    },
+    {
+        "Name": ".NET",
+        "Class": "Tools",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/net-framework-240.png"
+    },
+    {
+        "Name": "Pytorch",
+        "Class": "Tools",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/pytorch-240.png"
+    },
+    {
+        "Name": "Hugging Face",
+        "Class": "Lib",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/hugging-face-240.png"
+    },
+    {
+        "Name": "NumPy",
+        "Class": "Lib",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/numpy-240.png"
+    },
+    {
+        "Name": "Matplotlib",
+        "Class": "Lib",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/matplotlib-240.png"
+    }
+]

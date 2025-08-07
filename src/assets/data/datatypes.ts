@@ -22,3 +22,14 @@ export interface TlEntry {
     "LogoPath" : string | null;
     "Description" : string | null;
 }
+
+export interface TechSkills {
+    "Name": string | null;
+    "Class": string | null;
+    "Domain": string | null;
+    "LogoPath": string | null;
+}
+export interface OtherSkills {
+    "Name": string | null;
+    "OtherSkills" : string[];
+}
