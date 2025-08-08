@@ -1,0 +1,10 @@
+:host{
+  display:block;
+  position:relative;
+  z-index:2;         /* one layer higher than the landing screen     */
+}
+.cards {
+    display: flex;
+    margin: 0 auto;
+
+}

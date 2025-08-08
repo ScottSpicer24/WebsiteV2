@@ -1,0 +1,21 @@
+
+[
+    {
+        "Name": "LLaVA Med",
+        "Overview": "Designed and trained a custom LLaVA-style model for medical visual question answering. The system combines DeepSeek-R1 as the language backbone with a CLIP vision encoder, jointly fine-tuned on 227 k image-question pairs from the open-source PMC-VQA dataset. Leveraging chain-of-thought reasoning, the model delivers accurate, explainable answers to complex medical queries.",
+        "Contributions": null,
+        "VisualPath": null,
+        "Tools": ["Python", "Hugging Face", "NumPy", "AWS"],
+        "ToolsVisualPath": ["icons/python-240.png", "icons/hugging-face-240.png", "icons/numpy-240.png", "icons/aws-256.png"],
+        "OtherTools" : ["Google Colab", "Kaggle Notebooks"]
+    },
+    {
+        "Name": "BIAS 101",
+        "Overview": "UCF-101 is a widely used action-recognition dataset, but its original videos show significant bias across age, gender, race, hair color, and body type. Working in a team of four, we mitigated these biases by adding carefully-selected counterfactual videos, which reduced the χ² (chi-squared) imbalance score and the dominance ratio.",
+        "Contributions": ["Reviewed state-of-the-art techniques for debiasing video datasets and shaped the team's methodology.", "Wrote a Python script that detects scene changes and automatically splits videos into granular clips for analysis.", "Integrated an activity-verification model to confirm that each new clip still depicts the intended action class.", "Performed manual QA on clips to validate action labels and bias tags, ensuring high data quality."],
+        "VisualPath": null,
+        "Tools": ["Python", "Hugging Face", "NumPy", "AWS"],
+        "ToolsVisualPath": ["icons/python-240.png", "icons/hugging-face-240.png", "icons/numpy-240.png", "icons/aws-256.png"],
+        "OtherTools" : ["Google Colab", "Kaggle Notebooks"]
+    }
+]

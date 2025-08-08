@@ -1,0 +1,17 @@
+<div class="pj-card">
+    <div class="title">
+        <div class="name">{{ item.Name }}</div>
+        <div>
+            <div class="icons">
+                @for(pic of item.ToolsVisualPath; track $index){
+                    <img src="pic">
+                }
+            </div> <!-- Tool logos -->
+            <div><u>Other Tools</u>: {{ item.OtherTools.join(", ") }}</div><!-- other tools -->
+        </div>
+    </div>
+    <div>{{ item.Overview }}</div> <!-- Project desc -->
+
+    <button mat-flat-button (click)="doStuff()"></button>
+    <!-- Back side for images, videos and my contributions-->
+</div>

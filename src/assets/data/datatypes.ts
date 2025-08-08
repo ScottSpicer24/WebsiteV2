@@ -33,3 +33,14 @@ export interface OtherSkills {
     "Name": string | null;
     "OtherSkills" : string[];
 }
+
+/* "../../../../assets */
+export interface Project {
+    "Name": string;
+    "Overview": string;
+    "Contributions": string[] | null;
+    "VisualPath": string | null;
+    "Tools": string[];
+    "ToolsVisualPath": string[];
+    "OtherTools": string[];
+}

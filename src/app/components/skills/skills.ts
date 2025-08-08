@@ -14,7 +14,7 @@ export class Skills {
   fe: TechSkills[] = [];
   se: TechSkills[] = [];
   ml: TechSkills[] = [];
-  others: string = "";
+  others: string[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -29,13 +29,7 @@ export class Skills {
     
     this.http.get<OtherSkills>('assets/data/other-skills.json').subscribe((data) => {
       console.log("got to others: " + data);
-      for(let i = 0; i < data.OtherSkills.length; i++){
-        const skill = data.OtherSkills[i];
-        if(i == (data.OtherSkills.length - 1)){
-          this.others += skill;
-        }
-        else{this.others += (skill + ", ");}
-      }
+      this.others = data.OtherSkills;
     });
 
     /*
