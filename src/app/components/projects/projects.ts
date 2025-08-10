@@ -12,13 +12,26 @@ import { HttpClient } from '@angular/common/http';
 export class Projects {
   data: Project[] = [];
   currIndex = 0;
+  lastIndex = 100;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.http.get<Project[]>('assets/data/projects.json').subscribe((data) => {
       this.data = data;
+      this.lastIndex = data.length - 1;
       console.log(this.data);
     });
+  }
+
+  left(){
+    if(this.currIndex > 0){
+      this.currIndex -= 1;
+    }
+  }
+  right(){
+    if(this.currIndex < this.lastIndex){
+      this.currIndex += 1;
+    }
   }
 }

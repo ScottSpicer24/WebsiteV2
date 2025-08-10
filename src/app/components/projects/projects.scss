@@ -4,7 +4,17 @@
   z-index:2;         /* one layer higher than the landing screen     */
 }
 .cards {
-    display: flex;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
 
+.card {
+  display: flex;
+  margin: 0 auto;
+}
+
+.idx-btn {
+  height: 2rem;
+  width: 4rem;
+  margin: auto auto;
 }

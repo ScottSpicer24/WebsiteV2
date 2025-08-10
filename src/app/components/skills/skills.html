@@ -3,14 +3,14 @@
         @for(skill of fe; track $index){
             @if($index % 2 == 0){
                 <div class="entry">
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                     <p>{{ skill.Name }}</p>
                 </div>
             }
             @else {
                 <div class="entry">
                     <p>{{ skill.Name }}</p>
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                 </div>
             }
         }
@@ -19,14 +19,14 @@
         @for(skill of se; track $index){
             @if($index % 2 == 0){
                 <div class="entry">
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                     <p>{{ skill.Name }}</p>
                 </div>
             }
             @else {
                 <div class="entry">
                     <p>{{ skill.Name }}</p>
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                 </div>
             }
         }
@@ -35,14 +35,14 @@
         @for(skill of ml; track $index){
             @if($index % 2 == 0){
                 <div class="entry">
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                     <p>{{ skill.Name }}</p>
                 </div>
             }
             @else {
                 <div class="entry">
                     <p>{{ skill.Name }}</p>
-                    <img src="{{skill.LogoPath}}">
+                    <img [src]="skill.LogoPath">
                 </div>
             }
         }

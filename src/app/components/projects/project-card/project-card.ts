@@ -14,10 +14,5 @@ export class ProjectCard implements OnInit{
   }
   
   @Input() item!: Project;
-  basePath = "../../../../assets" 
-  
-  doStuff(){
-    console.log("pjt item: " + JSON.stringify(this.item));
-    console.log(this.basePath + this.item.ToolsVisualPath[0])
-  }
+  basePath = "../../../../assets/";
 }

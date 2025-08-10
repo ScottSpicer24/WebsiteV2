@@ -1,4 +1,6 @@
 <div class="cards">
-    <app-project-card [item]="data[currIndex]"></app-project-card>
+    <button mat-flat-button class="idx-btn" (click)="left()">left</button>
+    <app-project-card class="card" [item]="data[currIndex]"></app-project-card>
+    <button mat-flat-button class="idx-btn" (click)="right()">right</button>
 </div>
 

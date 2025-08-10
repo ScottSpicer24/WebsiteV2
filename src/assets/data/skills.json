@@ -44,7 +44,7 @@
     {
         "Name": "Git",
         "Class": "Tools",
-        "Domain": "SE",
+        "Domain": "FE",
         "LogoPath": "../../../../assets/icons/git-240.png"
     },
     {
