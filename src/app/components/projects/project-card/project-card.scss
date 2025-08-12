@@ -1,16 +1,16 @@
 .pj-card{
-    height: 27vh;
-    //width: 50vw;
     padding: 1.25rem;
     margin: 25px;
+
     
+    border: 5px solid magenta;
+    background-color:rgb(143, 143, 143);
+    color: black;
+    border-radius: 9px;
+}
+.frontside{
     display: grid;
-    grid-template-rows: 4fr 2fr;
-    
-    border: 5px solid aliceblue;
-    background-color: transparent;
-    color: aliceblue;
-    
+    grid-template-rows: 3fr 2fr 1fr;
 }
 .title {
     display: grid;
@@ -32,4 +32,23 @@
 }
 .other-tools {
     font-size: 0.75rem;
+}
+
+.more-info{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.more-btn-cont{
+    margin-top: 10px;
+}
+.back-title{
+    font-family: var(--space-font-title);
+    font-size: 1.25rem;
+}
+.backside {
+    display: flex;
+    flex-direction: column;
 }

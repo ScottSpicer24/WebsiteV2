@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { ProjectCard } from './project-card/project-card';
 import { Project } from '../../../assets/data/datatypes';
 import { HttpClient } from '@angular/common/http';
+import { NgClass } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-projects',
-  imports: [ProjectCard],
+  imports: [ProjectCard, NgClass, MatButtonModule],
   templateUrl: './projects.html',
   styleUrl: './projects.scss'
 })
@@ -24,14 +26,18 @@ export class Projects {
     });
   }
 
-  left(){
-    if(this.currIndex > 0){
-      this.currIndex -= 1;
-    }
+  animClass = '';
+
+  left() {
+    // show previous item
+    this.currIndex = (this.currIndex - 1 + this.data.length) % this.data.length;
+    this.animClass = 'slide-right'; // coming from left -> move right-to-center
   }
-  right(){
-    if(this.currIndex < this.lastIndex){
-      this.currIndex += 1;
-    }
+
+  right() {
+    // show next item
+    this.currIndex = (this.currIndex + 1) % this.data.length;
+    this.animClass = 'slide-left';  // coming from right -> move left-to-center
   }
+
 }

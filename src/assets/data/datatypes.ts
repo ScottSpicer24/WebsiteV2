@@ -37,6 +37,7 @@ export interface OtherSkills {
 /* "../../../../assets */
 export interface Project {
     "Name": string;
+    "Description" : string;
     "Overview": string;
     "Contributions": string[] | null;
     "VisualPath": string | null;

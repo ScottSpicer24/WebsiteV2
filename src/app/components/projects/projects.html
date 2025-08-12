@@ -1,6 +1,16 @@
 <div class="cards">
-    <button mat-flat-button class="idx-btn" (click)="left()">left</button>
-    <app-project-card class="card" [item]="data[currIndex]"></app-project-card>
-    <button mat-flat-button class="idx-btn" (click)="right()">right</button>
+    <button mat-flat-button style="background-color: transparent;" class="idx-btn" (click)="left()">
+       <img src="../../../assets/icons/icons8-left-arrow-100.png">
+    </button>
+    
+    <app-project-card class="card" 
+        [ngClass]="animClass"
+        [item]="data[currIndex]"
+        [flipped] = "false"
+        (animationend)="animClass = ''"
+    ></app-project-card>
+    
+    <button mat-flat-button style="background-color: transparent;"   class="idx-btn" (click)="right()">
+        <img src="../../../assets/icons/icons8-right-arrow-96.png">
+    </button>
 </div>
-

@@ -2,13 +2,13 @@
 [
     {
         "Name": "LLaVA Med",
-        "Description": "Designed and trained a custom LLaVA-style model for medical visual question answering. The system combines DeepSeek-R1 as the language backbone with a CLIP vision encoder, jointly fine-tuned on 227 k image-question pairs from the open-source PMC-VQA dataset. Leveraging chain-of-thought reasoning, the model delivers accurate, explainable answers to complex medical queries.",
-        "Overview": "Fine Tuned a LLaVA model to answer multiple choice medical questions. Hosted at medllava.scottspicer.com",
+        "Description": "Trained a LLaVA-style model for multiple choice medical visual question answering. Fine-tuned on 20k image-question pairs from the open-source PMC-VQA dataset. This imporved the accuracy compared to baseline by 15%. Made a UI and hosted the model for demo purposes at medllava.scottspicer.com",
+        "Overview": "Fine-Tuned a LLaVA model to answer multiple choice medical questions. Hosted at medllava.scottspicer.com",
         "Contributions": null,
         "VisualPath": null,
-        "Tools": ["Python", "Hugging Face", "AWS", "PyTorch"],
-        "ToolsVisualPath": ["icons/python-240.png", "icons/hugging-face-240.png", "icons/aws-256.png", "icons/pytorch-240.png"],
-        "OtherTools" : ["Numpy", "Google Colab", "Kaggle Notebooks"]
+        "Tools": ["Python", "Hugging Face", "PyTorch"],
+        "ToolsVisualPath": ["icons/python-240.png", "icons/hugging-face-240.png","icons/pytorch-240.png"],
+        "OtherTools" : ["Angular", "AWS", "Numpy", "Google Colab", "Kaggle Notebooks"]
     },
     {
         "Name": "BIAS 101",
@@ -42,9 +42,9 @@
     },
     {
         "Name": "CLEAR",
-        "Description": "This study compares AI-based and traditional video denoisers using the UCF-101 dataset, focusing on denoising performance across four noise types: Gaussian, Salt-and-Pepper, Poisson, and Speckle. Metrics such as PSNR, SSIM, VIF are used to evaluate denoising quality, while computational efficiency is measured through processing time per frame. The results reveal that AI-based denoisers like VRT excel in complex noise restoration but require substantial computational resources, whereas traditional denoisers demonstrate better efficiency at the cost of quality. ",
+        "Description": "This study compared AI-based and traditional video denoisers using the UCF-101 dataset, focusing on denoising performance across four noise types: Gaussian, Salt-and-Pepper, Poisson, and Speckle. Metrics such as PSNR, SSIM, VIF are used to evaluate denoising quality, while computational efficiency is measured through processing time per frame. The results reveal that AI-based denoisers like VRT excel in complex noise restoration but require substantial computational resources, whereas traditional denoisers demonstrate better efficiency at the cost of quality. ",
         "Overview": "A study with 4 others that compared AI-based and traditional video denoisers on 4 noise types across 3 metrics.",
-        "Contributions": ["Applied four distinct noise types to over 13,000 videos, each ranging from 3 to 7 minutes in length.", "Researched and optimized hyperparameter settings for the Fast Non-Local Means function through extensive testing.", "Researched and optimized hyperparameter settings for the Fast Non-Local Means function through extensive testing."],
+        "Contributions": ["Applied four distinct noise types to over 13,000 videos, each ranging from 3 to 7 minutes in length.", "Researched and optimized hyperparameter settings for the Fast Non-Local Means function through extensive testing.", "Analyzed denoised videos, generated performance metrics and visualizations, and presented findings effectively."],
         "VisualPath": null,
         "Tools": ["Python", "Hugging Face", "NumPy", "PyTorch"],
         "ToolsVisualPath": ["icons/python-240.png", "icons/numpy-240.png", "icons/pytorch-240.png"],
