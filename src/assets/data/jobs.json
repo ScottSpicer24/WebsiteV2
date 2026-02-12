@@ -1,0 +1,67 @@
+[
+    {
+        "Entity" : "Corteva Agriscience",
+        "City" : "Johnston",
+        "State" : "IA",
+        "Title" : "Software Engineering Intern",
+        "StartMonth" : "May",
+        "StartYear" : "2025",
+        "EndMonth" : "Aug.",
+        "EndYear" : "2025",
+        "Subtext" : "Internship",
+        "LogoPath" : "../../../../assets/logos/CTVA.png",
+        "Description": ["Worked on a team of 3 to create a greenhouse pest-management mobile app.", "Collaborated with stakeholders to ensure the app meets the necessary requirements.", "Developed Angular UI pages and implemented .NET data-management services.","Designed database tables for Microsoft SQL Server."]
+    },
+    {
+        "Entity" : "University of Central Florida",
+        "City" : "Orlando",
+        "State" : "FL",
+        "Title" : "Teaching Assistant",
+        "StartMonth" : "Jan.",
+        "StartYear" : "2024",
+        "EndMonth" : "Dec.",
+        "EndYear" : "2024",
+        "Subtext" : "Part-time Job",
+        "LogoPath" : "../../../../assets/logos/UCF_Peg_Yellow.png",
+        "Description": ["Assisted in the instruction and grading of computer science courses.", "Utilized Java and C, to demonstrate data structures, algorithms, and designing a compiler.","Conducted weekly lab sessions, office hours, and developed supplementary material to support students."]
+    },
+    {
+        "Entity" : "Frito-Lay",
+        "City" : "Orlando",
+        "State" : "FL",
+        "Title" : "Supply Chain Leader",
+        "StartMonth" : "Jan.",
+        "StartYear" : "2022",
+        "EndMonth" : "Dec.",
+        "EndYear" : "2022",
+        "Subtext" : "Full-time Job",
+        "LogoPath" : "../../../../assets/logos/frito_lay_logo.png",
+        "Description": ["Managed 12 mechanics in a fast-paced manufacturing plant that created over $2 million dollars worth of product daily.", "Coordinated across departments to solve unexpected problems while maximizing run time.", "Actively contributed to determining, planning, and executing equipment efficiency improvement projects."]
+    },
+        {
+        "Entity" : "Frito-Lay",
+        "City" : "Orlando",
+        "State" : "FL",
+        "Title" : "Supply Chain Intern",
+        "StartMonth" : "May",
+        "StartYear" : "2021",
+        "EndMonth" : "Aug.",
+        "EndYear" : "2021",
+        "Subtext" : "Internship",
+        "LogoPath" : "../../../../assets/logos/frito_lay_logo.png",
+        "Description": ["Completed a water resource conservation project resulting in an annual savings of over 3 million gallons by optimizing the corn washing systems.", "Additionally, I devised a comprehensive plan for the installation of digital flowmeters, streamlining future water conservation projects."]
+    },
+    {
+        "Entity" : "Pinchers Crab Shack",
+        "City" : "Carrollwood",
+        "State" : "FL",
+        "Title" : "Expediter, Cook, Dishwasher",
+        "StartMonth" : "Feb",
+        "StartYear" : "2015",
+        "EndMonth" : "Aug.",
+        "EndYear" : "2017",
+        "Subtext" : "Part-time Job",
+        "LogoPath" : "../../../../assets/logos/pinchers.jpg",
+        "Description": ["I began my career in high school as a dishwasher, quickly adapting to the fast-paced kitchen environment and demonstrating my ability to learn and take on new responsibilities.\nI progressed to prep cook, then line cook and eventually expediter, the lead of the kitchen."]
+    }
+]

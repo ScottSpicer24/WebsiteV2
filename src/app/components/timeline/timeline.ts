@@ -10,29 +10,33 @@ import { TimelineCard } from "./timeline-card/timeline-card";
   styleUrl: './timeline.scss'
 })
 export class Timeline implements OnInit {
-  testScroll = ''
-  data: TlEntry[] = [];
+  education: TlEntry[] = [];
+  jobs: TlEntry[] = []
+
+  // Set boolean of which to show and set data to that arrat
+  showJobs: boolean = true
+  data: TlEntry[] = []
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<TlEntry[]>('assets/data/timeline.json').subscribe((data) => {
-      this.data = data;
-      console.log(this.data);
+    // Get the education data from the json
+    this.http.get<TlEntry[]>('assets/data/education.json').subscribe((data) => {
+      this.education = data;
+      console.log(this.education);
+    });
+    // get job data from the json
+    this.http.get<TlEntry[]>('assets/data/jobs.json').subscribe((data) => {
+      this.jobs = data;
+      console.log(this.jobs);
+
+      this.showJobs = true
+      this.updateDisplayData()
+
     });
   }
 
-  /*
-  @HostListener('window:scroll') onScroll(){
-    //console.log(window.screenY);
-    if(window.scrollY > 0){
-      this.testScroll = 'scrolled';
-      console.log(this.testScroll)
-    }
-    else{
-      this.testScroll = '';
-    }
+  updateDisplayData(): void {
+    this.data = this.showJobs ? this.jobs : this.education;
   }
-  */
-
 }

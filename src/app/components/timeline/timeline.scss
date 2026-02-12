@@ -1,30 +1,90 @@
-:host{
-  display:block;
-  position:relative;
-  z-index:2;         /* one layer higher than the landing screen     */
+:host {
+  display: flex; 
+  flex-direction: column; // Stack children vertically
+  align-items: center; // Centers children horizontally
+  position: relative;
+  z-index: 2;
+  padding: 2rem 0; // Add padding instead of relying on child margins
 }
-.tl-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 5px;
-    background-image: linear-gradient(#FFF, #FFF);
-    background-size: 2px 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 4rem;
+
+.tl-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px;
+  background-image: linear-gradient(#FFF, #FFF);
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 4rem 0; // Changed to vertical margin only
+  width: 100%; // Ensure it takes full width
 }
 
 .card-container {
-    display: flex;
-    z-index: 5;
-    margin: -4rem auto 1rem;
+  display: flex;
+  z-index: 5;
+  margin: -4rem auto 1rem;
 }
 
 .even-card {
-    transform: translateX(calc((50% + 2rem) * -1));
+  transform: translateX(calc((50% + 2rem) * -1));
 }
+
 .odd-card {
-    transform: translateX(calc(50% + 2rem));
+  transform: translateX(calc(50% + 2rem));
+}
+
+// Variables for radio button
+$dark: #3e4666;   // Very dark purple
+//$light: #8b5cf6;  // Medium purple
+$grey: #9ca3af;// #6b7280;
+$width: 21rem;
+$height: 3rem;
+$padding-switch: $height * 0.05;
+$padding-choice: $height * 0.05;
+
+.switch-container {
+  display: flex;
+  margin: 2rem 0;
+  //background-color: $light;
+  border-radius: 6px;
+  overflow: visible;
+  width: $width;
+  position: relative;
+  padding: 4px; // Add padding to create gap
+  gap: 4px; // Gap between buttons
+  
+  .choice {
+    font-size: 1rem;
+    width: calc($width / 2);
+    height: $height;
+    line-height: $height;
+    text-align: center;
+    padding: $padding-choice;
+    color: $grey;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px; // Add border radius to all buttons
+    
+    &.on {
+      color: #fff;
+      background-color: $dark;
+      border-radius: 4px; // Ensure selected button has border radius
+    }
+  }
+  
+  .diamond {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #191c29;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5px;
+    margin-left: -7.5px;
+    z-index: 10;
+  }
 }

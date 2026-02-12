@@ -10,6 +10,5 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class TimelineCard {
   @Input() item!: TlEntry;
-
   flipped: boolean = false;
 }

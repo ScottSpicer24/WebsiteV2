@@ -1,5 +1,5 @@
 @if(!flipped){
-    <div class="tl-card front">
+    <button mat-flat-button (click)="flipped = !flipped" class="tl-card front">
         <div class="top">
             <div class="top-left">
                 <img src='{{item.LogoPath}}' alt="UCF">
@@ -36,21 +36,17 @@
             </div>
             <div class="bot-sub">
                 <div>{{ item.Subtext }}</div>
-                @if(item.Description){
-                    <button mat-flat-button (click)="flipped = !flipped">More</button>
-                }
             </div> 
         </div>
-    </div>
+    </button>
 }
 
 @else {
-    <div class="tl-card back">
+    <button mat-flat-button (click)="flipped = !flipped" class="tl-card back">
         <ul>
             @for(bullet of item.Description; track $index){
                 <li>{{bullet}}</li>
             }
         </ul>
-        <button mat-flat-button (click)="flipped = !flipped">Return</button>
-    </div>
+    </button>
 }
