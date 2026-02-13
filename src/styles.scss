@@ -12,21 +12,13 @@ html, body{
   height: 100%;
 }
 
-html {
-  @include mat.theme((
-    color: (
-      primary: mat.$magenta-palette,
-      tertiary: mat.$violet-palette,
-    ),
-    //typography: Roboto,
-    density: 0,
-  ));
-}
-
 :root{
   --space-font-title: 'Orbitron', sans-serif; 
   --space-font: 'Space Mono', monospace;     /* custom variable */
+  --card-bg-color: #191c29;
+  --card-choice-color: #3e4666;
 }
+
 body {
   font: var(--space-font);
   color: aliceblue;
@@ -60,3 +52,11 @@ body {
   animation: spin 3s ease-in-out infinite;
 }
 /*** Card Style END ***/
+
+// Dialog styles
+.project-dialog {
+  .mat-mdc-dialog-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+  }
+}

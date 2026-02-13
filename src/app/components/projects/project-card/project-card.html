@@ -1,40 +1,16 @@
-<div class="pj-card">
-    @if(!flipped){
-        <div class="frontside">
-            <div class="title">
-                <div class="name">{{ item.Name }}</div>
-                <div>
-                    <div class="icons">
-                        @for(pic of item.ToolsVisualPath; track $index){
-                            <img [src]="basePath + pic">
-                        }
-                    </div> <!-- Tool logos -->
-                    <div class="other-tools"><u>Other Tools</u>: {{ item.OtherTools.join(", ") }}</div><!-- other tools -->
-                </div>
-            </div>
-            <div class="overview">{{ item.Overview }}</div> <!-- Project desc -->
-
-            <!-- Back side for images, videos and my contributions-->
-            <div class="more-btn-cont">
-                <button mat-flat-button class="more-info" (click)="flipped = !flipped;">More Info</button>
-            </div>
-        </div>
-    }
-    @else{
-        <div class="backside">
-            <div class="back-title"><u>Full Description</u>:</div>
-            <div>{{item.Description}}</div>
-            @if(item.Contributions != null){
-                <div class="back-title"><u>My Contributions</u>:</div>
-                <ul>
-                    @for(bullet of item.Contributions; track $index){
-                        <li>{{ bullet }}</li>
+<button mat-flat-button (click)="openDialog()" class="pj-card">
+    <div class="frontside">
+        <div class="title">
+            <div class="name">{{ item.Name }}</div>
+            <div>
+                <div class="icons">
+                    @for(pic of item.ToolsVisualPath; track $index){
+                        <img [src]="basePath + pic">
                     }
-                </ul>
-            }
-            <div class="more-btn-cont">
-                <button mat-flat-button class="more-info" (click)="flipped = !flipped;">Back</button>
+                </div> <!-- Tool logos -->
+                <div class="other-tools"><u>Other Tools</u>: {{ item.OtherTools.join(", ") }}</div><!-- other tools -->
             </div>
         </div>
-    }
-</div>
+        <div class="overview">{{ item.Overview }}</div> <!-- Project desc -->
+    </div>
+</button>

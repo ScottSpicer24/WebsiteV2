@@ -1,0 +1,69 @@
+<div class="card">
+    <div class="dialog-header">
+        <h2>{{ data.Name }}</h2>
+        <button mat-icon-button (click)="close()">
+            <mat-icon>clear</mat-icon>
+        </button>
+    </div>
+
+    <div mat-dialog-content class="dialog-body">
+        <!-- Tech Stack -->
+        <div class="tech-section">
+        <div class="icons">
+            @for(pic of data.ToolsVisualPath; track $index){
+            <img [src]="basePath + pic" alt="tech icon">
+            }
+        </div>
+        @if(data.OtherTools.length > 0){
+            <div class="other-tools">
+            <strong>Other Tools:</strong> {{ data.OtherTools.join(", ") }}
+            </div>
+        }
+        </div>
+
+        <!-- Video/Image Section -->
+        @if(data.VideoPath){
+        <div class="media-section">
+            <video controls [src]="data.VideoPath"></video>
+        </div>
+        } @else if(data.VisualPath){
+        <div class="media-section">
+            <img [src]="data.VisualPath" alt="{{ data.Name }} preview">
+        </div>
+        }
+
+        <!-- Full Description -->
+        <div class="description-section">
+        <h3>Description</h3>
+        <p>{{ data.Description }}</p>
+        </div>
+
+        <!-- Contributions -->
+        @if(data.Contributions){
+        <div class="contributions-section">
+            <h3>My Contributions</h3>
+            <ul>
+            @for(bullet of data.Contributions; track $index){
+                <li>{{ bullet }}</li>
+            }
+            </ul>
+        </div>
+        }
+
+        <!-- Links -->
+        <div class="links-section">
+        @if(data.GithubUrl){
+            <a mat-raised-button [href]="data.GithubUrl" target="_blank" rel="noopener">
+            <mat-icon>code</mat-icon>
+            View Code
+            </a>
+        }
+        @if(data.LiveDemoUrl){
+            <a mat-raised-button color="primary" [href]="data.LiveDemoUrl" target="_blank" rel="noopener">
+            <mat-icon>open_in_new</mat-icon>
+            Live Demo
+            </a>
+        }
+        </div>
+    </div>
+</div>

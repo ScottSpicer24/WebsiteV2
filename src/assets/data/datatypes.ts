@@ -41,7 +41,10 @@ export interface Project {
     "Overview": string;
     "Contributions": string[] | null;
     "VisualPath": string | null;
+    "VideoPath": string | null;    
     "Tools": string[];
     "ToolsVisualPath": string[];
     "OtherTools": string[];
+    "GithubUrl": string | null;     
+    "LiveDemoUrl": string | null;
 }

@@ -1,55 +1,65 @@
 :host{
-  display:block;
-  position:relative;
-  z-index:2;     
+  display: block;
+  position: relative;
+  z-index: 2;     
 }
-.cards {
+
+.cards-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
-  overflow: hidden;
-  padding-bottom: 30px;   
-  height: 80vh;         
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  // Tablet: 2 columns
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  // Mobile: 1 column
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
 }
 
 .card {
   display: flex;
-  margin: 0 auto;
   width: 100%;
-  will-change: transform, opacity;
+  min-height: 400px; // Adjust based on your content
+  
+  // Optional: staggered fade-in animation on load
+  animation: fadeInUp 0.5s ease backwards;
+  
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.05}s;
+    }
+  }
 }
 
-// animate in from the right (content moves left) 
-.slide-left {
-  animation: slideLeftIn 280ms ease both;
-}
-
-// animate in from the left (content moves right) 
-.slide-right {
-  animation: slideRightIn 280ms ease both;
-}
-
-@keyframes slideLeftIn {
-  from { transform: translateX(20%); opacity: 0; }
-  to   { transform: translateX(0);   opacity: 1; }
-}
-
-@keyframes slideRightIn {
-  from { transform: translateX(-20%); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 // Motion-safe fallback
 @media (prefers-reduced-motion: reduce) {
-  .slide-left, .slide-right { animation: fadeIn 200ms ease both; }
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-}
-
-.idx-btn {
-  margin: auto;
-  background-color: transparent;
-  background: transparent;
-  border: 0;
-  height: 100px;
-  width: 100px;
+  .card { 
+    animation: fadeIn 0.3s ease backwards;
+  }
+  @keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+  }
 }

@@ -1,0 +1,91 @@
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+    h2 {
+    margin: 0;
+    font-family: var(--space-font-title);
+    font-size: 2rem;
+    }
+}
+
+.dialog-body {
+    padding: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    color: aliceblue;
+}
+
+.tech-section {
+    margin-bottom: 2rem;
+    
+    .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+    }
+    
+    .other-tools {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    }
+}
+
+.media-section {
+    margin-bottom: 2rem;
+    
+    video, img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #000;
+    }
+}
+
+.description-section,
+.contributions-section {
+    margin-bottom: 2rem;
+    
+    h3 {
+    font-family: var(--space-font-title);
+    margin-bottom: 1rem;
+    }
+    
+    p {
+    line-height: 1.6;
+    }
+    
+    ul {
+    padding-left: 1.5rem;
+    
+    li {
+        margin-bottom: 0.75rem;
+        line-height: 1.6;
+    }
+    }
+}
+
+.links-section {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+    a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    }
+}
