@@ -23,7 +23,7 @@
         "EndYear" : "2024",
         "Subtext" :  "Cloud Certification",
         "LogoPath" : "../../../../assets/logos/AWS-Certified-Developer-Associate_badge.png",
-        "Description": ["Validation Number: 3687243923ea4603b7c89567be8dda9d", "Validate at https://aws.amazon.com/verification"]
+        "Description": ["Validation Number: 3687243923ea4603b7c89567be8dda9d", "Validate at https://aws.amazon.com/verification", "Expires in September 2027"]
     },
     {
         "Entity" : "University of Central Florida",

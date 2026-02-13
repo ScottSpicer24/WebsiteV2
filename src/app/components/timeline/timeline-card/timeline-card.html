@@ -43,7 +43,7 @@
 
 @else {
     <button mat-flat-button (click)="flipped = !flipped" class="tl-card back">
-        <ul>
+        <ul class="back-list">
             @for(bullet of item.Description; track $index){
                 <li>{{bullet}}</li>
             }

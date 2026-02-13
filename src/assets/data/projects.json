@@ -1,9 +1,31 @@
 
 [
     {
+        "Name": "Trip Buddy",
+        "Description": "Agentic AI travel planning web application that autonomously researches transportation, lodging, dining, and activities based on natural language user input, presents curated options, and books selected travel arrangements while providing real-time assistance through a fine-tuned multimodal language model.",
+        "Overview": "Agentic AI travel planning web application.",
+        "Contributions": ["Engineered a multi-node agentic system to plan an itinerary using LangChain.", "Integrated OpenRouter LLMs with tool-calling pipelines for dynamic web searching. Utilizing search, page navigation, scraping, and OCR.", "Created robust data validation pipelines to ensure quality input and outputs."],
+        "VisualPath": "assets/project/TripBuddy.png",
+        "VideoPath": null,
+        "Tools": ["Python"],
+        "ToolsVisualPath": ["icons/python-240.png"],
+        "OtherTools" : ["LangChain", "OpenRouter", "FastAPI", "Next.js", "Supabase"]
+    },
+    {
+        "Name": "OmniToM",
+        "Description": "Developed a novel Theory of Mind benchmark dataset by generating and annotating ~20,000 structured beliefs across ~900 stories using a multi-model LLM pipeline, applying a psychology-grounded annotation framework and experimentally optimizing belief extraction and labeling through systematic prompting and cross-model evaluation.",
+        "Overview": "A novel theory of mind benchmark dataset.",
+        "Contributions": ["Researched Theory of Mind papers across both computer science and social science.", "Wrote scripts to run experiments on belief extraction, belief annotation, or both. Scripts formatted the output and saved the raw output as well for QA.", "Scripts could dynamically change between models, task, story types, amount of stories, prompts, and output format with input parameters.", "Wrote batch scripts, utilized GPU and CPU clusters to run experiments in parallel across dozens of models and various permutations of input parameters across all 3 tasks."],
+        "VisualPath": "assets/project/OmniToM.png",
+        "VideoPath": null,
+        "Tools": ["Python"],
+        "ToolsVisualPath": ["icons/python-240.png"],
+        "OtherTools" : ["Batch", "OpenRouter", "OpenAI", "Slurm"]
+    },
+    {
         "Name": "LLaVA Med",
         "Description": "Trained a LLaVA-style model for multiple choice medical visual question answering. Fine-tuned on 20k image-question pairs from the open-source PMC-VQA dataset. This imporved the accuracy compared to baseline by 15%. Made a UI and hosted the model for demo purposes at medllava.scottspicer.com",
-        "Overview": "Fine-Tuned a LLaVA model to answer multiple choice medical questions. Hosted at medllava.scottspicer.com",
+        "Overview": "Fine-Tuned then deployed a LLaVA model to answer medical questions. Hosted at medllava.scottspicer.com",
         "Contributions": null,
         "VisualPath": null,
         "VideoPath": null,
@@ -14,7 +36,7 @@
     {
         "Name": "BIAS 101",
         "Description": "UCF-101 is a widely used action-recognition dataset, but its original videos show significant bias across age, gender, race, hair color, and body type. Working in a team of four, we mitigated these biases by adding carefully-selected counterfactual videos, which reduced the χ² (chi-squared) imbalance score and the dominance ratio.",
-        "Overview": "Worked with 3 people to debias the UCF-101 action-recognition video dataset.",
+        "Overview": "Expanded and debias the UCF-101 action-recognition video dataset.",
         "Contributions": ["Reviewed state-of-the-art techniques for debiasing video datasets and shaped the team's methodology.", "Wrote a Python script that detects scene changes and automatically splits videos into granular clips for analysis.", "Integrated an activity-verification model to confirm that each new clip still depicts the intended action class.", "Performed manual QA on clips to validate action labels and bias tags, ensuring high data quality."],
         "VisualPath": "assets/project/bias-101-workflow.png",
         "VideoPath": null,
@@ -36,10 +58,10 @@
     {
         "Name": "MiSu",
         "Description": "Mi casa es Su casa, my senior design project, was a smart home app that allows users to control all their smart devices and securely share access with guests. Users retain complete control over what actions guests can perform and when. Our team was responsible for version 4 of the app, which previously had not been maintained for two years. Due to extensive deprecations, we performed a full rebuild, improving data flow, management, and user experience.",
-        "Overview": "Worked with 4 people to build a smart home app that allows users to control all their smart devices and securely share access with guests.",
-        "Contributions": ["Led AWS cloud engineering efforts.", "Tested, debugged, and replaced deprecated Lambda functions and REST APIs.", "Designed and implemented a WebSocket solution to optimize real-time data flow.", "Added new features, including guest access requests and real-time log updates."],
-        "VisualPath": "assets/project/Misu8min.mp4",
-        "VideoPath": null,
+        "Overview": "Rebuilt a smart home app that allows users to control all their smart devices and securely share access with guests.",
+        "Contributions": ["Led AWS cloud engineering efforts for the team.", "Tested, debugged, and replaced deprecated Lambda functions and REST APIs.", "Designed and implemented WebSocket solutions to optimize real-time data flow.", "Aided in adding new features, including guest access requests and real-time log updates."],
+        "VisualPath": null,
+        "VideoPath": "assets/project/Misu8min.mp4",
         "Tools": ["AWS", "React"],
         "ToolsVisualPath": ["icons/aws-256.png", "icons/react-160.png"],
         "OtherTools" : ["Home Assistant", "Raspberry Pi", "Node.JS", "Expo", "Jira"]
@@ -61,14 +83,14 @@
         "Overview": "Created an FT-Transformer to classify the year of the song.",
         "Contributions": null,
         "VisualPath": null,
-        "VideoPath": null,
+        "VideoPath": "assets/project/song_classifier_presentation.mp4",
         "Tools": ["Python", "NumPy", "PyTorch"],
         "ToolsVisualPath": ["icons/python-240.png", "icons/numpy-240.png", "icons/pytorch-240.png"],
         "OtherTools" : ["Scikit-Learn", "Slurm"]
     },
     {
         "Name": "Spicy Fitness",
-        "Description": "Summer 2024 Solo project. One day in the gym I realized that there had to be a better way to track my workouts. After looking at a few that didn't have what I wanted, I decided to build my own. This way, I could easily have log progressive overload from day to day while having the flexibility to adapt quickly and seemlessly on the fly.",
+        "Description": "Summer 2024 Solo project. One day in the gym I realized that there had to be a better way to track my workouts. After looking at a few that didn't have what I wanted, I decided to build my own. This way, I could easily have log progressive overload from day to day while having the flexibility to adapt quickly and seemlessly on the fly. React Native front-end and AWS serverless back-end.",
         "Overview": "Created a fitness tracking mobile app to log workouts and track results.",
         "Contributions": null,
         "VisualPath": null, 
@@ -79,9 +101,9 @@
     },
     {
         "Name": "Online Chess",
-        "Description": "This project was part of my Processes for Object-Oriented Software Development class (COP 4331C). Our team developed an online multiplayer chess application that allows users to Manage accounts, add and interact with friends, track elo scores, and play chess matches in real-time. ",
-        "Overview": "Worked with 4 people to create a windows desktop app to play chess online with friends.",
-        "Contributions": ["Designed and implemented the game engine and its accompanying API for the chess game.", "Conducted extensive testing of game engine logic to ensure compliance with official chess rules.", "Set up the AWS infrastructure, including an EC2 instance, to enable WebSocket connections for real-time gameplay."],
+        "Description": "Our team of 4 developed an online multiplayer chess application that allows users to manage accounts, add and interact with friends, track elo scores, and play chess matches in real-time. ",
+        "Overview": "Created a windows desktop app to play chess online with friends.",
+        "Contributions": ["Designed and implemented the game engine and its accompanying API for the chess game.", "Conducted extensive testing of game engine logic to ensure compliance with official chess rules.", "Aided in the integration of my chess engine with the rest of the system.", "Set up the AWS infrastructure, including an EC2 instance, to enable WebSocket connections for real-time gameplay."],
         "VisualPath": null,
         "VideoPath": null,
         "Tools": [".NET", "C#"],
@@ -90,7 +112,7 @@
     },
         {
         "Name": "Wordle",
-        "Description": "This was the first application I made with a front-end and a back-end that communicate with each other. I completed it in the summer of 2023 with no clue how to create a front-end, much less how to get it create an API to communicate with the backend. The 2 frameworks Flask and bootstrap were both wonderful tools and helped me get closer to understanding how real software works.",
+        "Description": "This was the first application I made with both a front-end and a back-end, and the first time making a front-end at all. This project, utilizing Flask and Bootstrap, helped me get a better understanding of how real software works.",
         "Overview": "My first full application I made, it was a wordle clone web app.",
         "Contributions": null,
         "VisualPath": null,  
