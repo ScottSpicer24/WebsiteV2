@@ -30,12 +30,10 @@ body {
   initial-value: 130deg;
   inherits: false;
 }
+
 @keyframes spin {
   0% {
     --rotate: 0deg;
-  }
-  50%{
-    --rotate: 180deg;
   }
   100% {
     --rotate: 360deg;
@@ -45,12 +43,26 @@ body {
 .card {
   position: relative;
   border-radius: 8px;
-  background:
-    linear-gradient(#191c29, #191c29) padding-box,
-    linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2) border-box;
-  border: 4px solid transparent;  
-  animation: spin 3s ease-in-out infinite;
+  background: #191c29;
+  padding: 4px; // Space for the border
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 8px;
+    background: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    z-index: -1;
+    
+    // This changes the angle of the background gradient, thus giving a rotating border look
+    // But on chrome is spins the entire rectangle and not changing the gradient angle
+    //animation: spin 3s linear infinite;
+  }
 }
+
 /*** Card Style END ***/
 
 // Dialog styles
