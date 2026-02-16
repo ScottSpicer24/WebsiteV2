@@ -34,4 +34,6 @@ jobs:
       
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://scottspicer24-v2portfolio-website --exclude ".git*" --exclude ".github*" --exclude "README.md" --exclude "*.mp4" 
+          aws s3 sync dist/PortfolioV2/browser s3://scottspicer24-v2portfolio-website --delete
+        # (aws s3 sync == aws cli to sync with bucket), (dist/PortfolioV2/browser == output of npm run build i.e. what the browser needs)
+        # (s3://scottspicer24-v2portfolio-website == the bucket name), (-- delete == removes old files not in curr push)
