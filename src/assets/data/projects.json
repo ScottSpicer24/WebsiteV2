@@ -2,14 +2,14 @@
 [
     {
         "Name": "Trip Buddy",
-        "Description": "Agentic AI travel planning web application that autonomously researches transportation, lodging, dining, and activities based on natural language user input, presents curated options, and books selected travel arrangements while providing real-time assistance through a fine-tuned multimodal language model.",
+        "Description": "Agentic AI travel planning web application that autonomously researches transportation, lodging, dining, and activities based on natural language user input, presents curated options, and books selected travel arrangements while providing real-time assistance through a fine-tuned multimodal language model. (Demo coming soon)",
         "Overview": "Agentic AI travel planning web application.",
         "Contributions": ["Engineered a multi-node agentic system to plan an itinerary using LangChain.", "Integrated OpenRouter LLMs with tool-calling pipelines for dynamic web searching. Utilizing search, page navigation, scraping, and OCR.", "Created robust data validation pipelines to ensure quality input and outputs."],
         "VisualPath": "assets/project/TripBuddy.png",
         "VideoPath": null,
-        "Tools": ["Python"],
-        "ToolsVisualPath": ["icons/python-240.png"],
-        "OtherTools" : ["LangChain", "OpenRouter", "FastAPI", "Next.js", "Supabase"]
+        "Tools": ["Python", "LangChain", "OpenRouter"],
+        "ToolsVisualPath": ["icons/python-240.png", "icons/langchain.png", "icons/openrouter.png"],
+        "OtherTools" : ["FastAPI", "Next.js", "Supabase"]
     },
     {
         "Name": "OmniToM",
@@ -18,9 +18,9 @@
         "Contributions": ["Researched Theory of Mind papers across both computer science and social science.", "Wrote scripts to run experiments on belief extraction, belief annotation, or both. Scripts formatted the output and saved the raw output as well for QA.", "Scripts could dynamically change between models, task, story types, amount of stories, prompts, and output format with input parameters.", "Wrote batch scripts, utilized GPU and CPU clusters to run experiments in parallel across dozens of models and various permutations of input parameters across all 3 tasks."],
         "VisualPath": "assets/project/OmniToM.png",
         "VideoPath": null,
-        "Tools": ["Python"],
-        "ToolsVisualPath": ["icons/python-240.png"],
-        "OtherTools" : ["Batch", "OpenRouter", "OpenAI", "Slurm"]
+        "Tools": ["Python", "OpenRouter"],
+        "ToolsVisualPath": ["icons/python-240.png", "icons/openrouter.png"],
+        "OtherTools" : ["Batch", "OpenAI API", "Slurm"]
     },
     {
         "Name": "LLaVA Med",

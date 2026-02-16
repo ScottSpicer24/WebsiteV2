@@ -37,7 +37,7 @@
 
 // Variables for radio button
 $dark: #3e4666;   // Very dark purple
-$grey: #9ca3af;// #6b7280;
+$grey: #9ca3af; //#6b7280;
 $width: 21rem;
 $height: 3rem;
 $padding-switch: $height * 0.05;
@@ -84,5 +84,40 @@ $padding-choice: $height * 0.05;
     margin-top: -7.5px;
     margin-left: -7.5px;
     z-index: 10;
+  }
+}
+
+
+// Mobile layouts
+// Add this at the end of your SCSS file
+@media (max-width: 768px) {
+  .tl-container {
+    background-image: none; // Remove center line on mobile
+    margin: 2rem 0; // Reduce vertical margin
+  }
+  
+  .card-container {
+    margin: 0 auto 1rem; // Remove negative top margin
+  }
+  
+  .even-card,
+  .odd-card {
+    transform: none; // Remove horizontal offset
+  }
+  
+  .switch-container {
+    width: 90%; // Make switch responsive
+    max-width: $width;
+  }
+}
+
+// Optional: Even smaller screens
+@media (max-width: 480px) {
+  .switch-container {
+    width: 95%;
+    
+    .choice {
+      font-size: 0.9rem;
+    }
   }
 }

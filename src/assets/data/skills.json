@@ -11,17 +11,17 @@
         "Domain": "SE",
         "LogoPath": "../../../../assets/icons/java-240.png"
     },
+        {
+        "Name": "C#",
+        "Class": "Languages",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/c-sharp-logo-2-240.png"
+    },
     {
         "Name": "TypeScript",
         "Class": "Languages",
         "Domain": "FE",
         "LogoPath": "../../../../assets/icons/typescript-240.png"
-    },
-    {
-        "Name": "C#",
-        "Class": "Languages",
-        "Domain": "SE",
-        "LogoPath": "../../../../assets/icons/c-sharp-logo-2-240.png"
     },
     {
         "Name": "HTML/CSS",
@@ -36,16 +36,28 @@
         "LogoPath": "../../../../assets/icons/sql-96.png"
     },
     {
+        "Name": "Git",
+        "Class": "Tools",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/git-240.png"
+    },
+        {
+        "Name": "GitHub (+Actions)",
+        "Class": "Tools",
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/github.png"
+    },
+    {
         "Name": "Amazon Web Service",
         "Class": "Tools",
         "Domain": "SE",
         "LogoPath": "../../../../assets/icons/aws-256.png"
     },
     {
-        "Name": "Git",
+        "Name": ".NET",
         "Class": "Tools",
-        "Domain": "FE",
-        "LogoPath": "../../../../assets/icons/git-240.png"
+        "Domain": "SE",
+        "LogoPath": "../../../../assets/icons/net-framework-240.png"
     },
     {
         "Name": "Angular",
@@ -60,10 +72,10 @@
         "LogoPath": "../../../../assets/icons/react-160.png"
     },
     {
-        "Name": ".NET",
+        "Name": "Docker",
         "Class": "Tools",
         "Domain": "SE",
-        "LogoPath": "../../../../assets/icons/net-framework-240.png"
+        "LogoPath": "../../../../assets/icons/docker.png"
     },
     {
         "Name": "Pytorch",
@@ -72,21 +84,27 @@
         "LogoPath": "../../../../assets/icons/pytorch-240.png"
     },
     {
-        "Name": "Hugging Face",
-        "Class": "Lib",
-        "Domain": "ML",
-        "LogoPath": "../../../../assets/icons/hugging-face-240.png"
-    },
-    {
         "Name": "NumPy",
         "Class": "Lib",
         "Domain": "ML",
         "LogoPath": "../../../../assets/icons/numpy-240.png"
     },
     {
-        "Name": "Matplotlib",
+        "Name": "Hugging Face",
         "Class": "Lib",
         "Domain": "ML",
-        "LogoPath": "../../../../assets/icons/matplotlib-240.png"
+        "LogoPath": "../../../../assets/icons/hugging-face-240.png"
+    },
+    {
+        "Name": "LangChain",
+        "Class": "Lib",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/langchain.png"
+    },
+    {
+        "Name": "OpenAI Library",
+        "Class": "Lib",
+        "Domain": "ML",
+        "LogoPath": "../../../../assets/icons/openai.png"
     }
 ]

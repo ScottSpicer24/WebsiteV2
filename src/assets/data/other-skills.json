@@ -2,8 +2,10 @@
     "Name": "OtherSkills",
     "OtherSkills":[
         "C",
-        "Flask", "Bootstrap",
-        "Azure DevOps", "GitHub", "GitHub Actions", "Node.JS", "Slurm", "NoSQL", "Expo", "Jira", "Batch", "Bash",
-        "Scikit-Learn", "Pandas", "Tensorflow", "Windows Forms"
+        "Node.JS", "Flask", 
+        "OpenRouter", "Matplotlib", "Scikit-Learn", "Pandas",
+        "Batch", "Bash", "Slurm", 
+        "Azure DevOps", "Jira", 
+        "NoSQL", "Bootstrap", "Expo", "Tensorflow", "Windows Forms"
     ]
 }

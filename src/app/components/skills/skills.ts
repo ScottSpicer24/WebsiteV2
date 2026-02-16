@@ -11,9 +11,6 @@ import { HttpClient } from '@angular/common/http';
 export class Skills {
   testScroll = ''
   skills: TechSkills[] = [];
-  fe: TechSkills[] = [];
-  se: TechSkills[] = [];
-  ml: TechSkills[] = [];
   others: string[] = [];
 
   constructor(private http: HttpClient) {}
@@ -21,9 +18,6 @@ export class Skills {
   ngOnInit(): void {
     this.http.get<TechSkills[]>('assets/data/skills.json').subscribe((data) => {
       this.skills = data;
-      this.fe = data.filter(s => s.Domain === 'FE');
-      this.se = data.filter(s => s.Domain === 'SE');
-      this.ml = data.filter(s => s.Domain === 'ML');
       console.log(this.skills);
     });
     
